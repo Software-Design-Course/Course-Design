@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- 将外部css文件链接进html -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/index.css">;//将外部css文件链接进html -->
+    <style>
+        @import url(css/index.css);
+        /* 这是导包形式的css */
 
+    </style>
+    <!-- //或者以导包的形式 -->
 </head>
 <body>
     <h1>今天我买了一个小风车~~</h1>
-    <h1>嘻嘻~~</h1>
+    <h2 style="color: rgb(128, 0, 255);" >嘻嘻~~</h2>
+    <!-- 这是在html中的css -->
 </body>
 </html>
