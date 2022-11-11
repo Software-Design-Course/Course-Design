@@ -1,5 +1,14 @@
 h1{
     color:red;
-
-
 }
+
+h3.text{
+    color: rgb(17, 226, 41);
+}
+h3.text1{
+    color: black;
+}
+h3.text2{
+    background-color: green;
+}
+/* 此处对于h3标签定义了不同的样式，通过.进行区分 */
