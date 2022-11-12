@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>鼠标悬浮仿纸张聚焦的样式</title>
+</head>
+<style type="text/css">
+  /* 核心样式 */
+  .card {
+    padding: 10px;
+    width: 300px;
+    height: 180px;
+    background-color: #FFF;
+    box-shadow: none;
+  }
+
+  .card:hover {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+    border-color: #eee;
+    transition: all .2s ease-in-out;
+  }
+</style>
+<body style="background: #e3e3e3;">
+<div class="card">
+  <div class="card-header">
+    <p>这是一张卡片</p>
+  </div>
+  <div class="card-body">
+    <p>描述：鼠标悬浮时，整张纸聚焦的效果</p>
+  </div>
+  <div class="card-footer">
+    <p>原理：改变 y 轴上的偏移和阴影扩散半径（第二、三个数字）</p>
+  </div>
+</div>
+</body>
+</html>
