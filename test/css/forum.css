@@ -32,10 +32,12 @@ div.index_text{
     /* float: left; */
     width: 60%;
     height: 150px;
+    min-width: 600px;
     /* text-align: center; */
     border: 1px solid blue;
     margin: 0 auto;
     margin-bottom: 8px;
+
 }
 .messageleft{
     float: left;
@@ -48,13 +50,31 @@ div.index_text{
     height: 150px;
 }
 .messageleft_title{
-    width: 100%;
-    height: 40%;
+    width: 98%;
+    height: 30%;
     margin-top: 10px;
     margin-left: 8px;
-    
 }
-.homepage{
+.messageleft_words{
+    width: 98%;
+    height: 58%;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.messageright_air{
+    width: 98%;
+    height: 75%;
+}
+.messageright_words{
+    width: 98%;
+    height: 25%;
+    font-size: 11px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+div.homepage{
     float: left;
     width: 70px;
     height: 60px;
