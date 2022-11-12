@@ -3,6 +3,9 @@
     height: 60px;
     color: white;
     background-color: aquamarine;
+    /* 设置sticky定位，粘性定位*/
+    position: sticky;
+    top: 0;
 }
 .index_mid{
     width: 100%;
