@@ -1,3 +1,4 @@
+html,body{width:100vw;}
 div.layout{
     width:100%;
     background-color: #e3e3e3;
@@ -18,8 +19,8 @@ div.layout{
     width: 100%;
     color: black;
     background-color:#ed1212;
-    padding:50px;
-    margin:0px;
+    /* padding:50px; */
+    /* margin:0px;  */
 }
 .homepage{
     float: left;
