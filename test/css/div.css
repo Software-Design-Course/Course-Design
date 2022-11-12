@@ -4,7 +4,7 @@ div.layout{
     background-color: #e3e3e3;
 }
 .index_div{
-    width: 100vw;
+    width: 100%;
 }
 .index_top{
     width: 100%;
@@ -28,6 +28,7 @@ div.layout{
     width: 70px;
     height: 60px;
     text-align: center;
+    /* border: solid; */
     /* 想要设置居中，必须设置长和宽，包括div的长和宽以及div包含内容的长和宽 */
     line-height: 60px;
 }
@@ -58,7 +59,6 @@ div.layout{
 .top_text{
     width: 70px;
     height: 60px;
-   float: left;
    line-height: 60px;
 }
 .top_ui{
