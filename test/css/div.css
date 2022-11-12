@@ -16,6 +16,7 @@ div.layout{
     top: 0;
 }
 .index_mid{
+    float: left;
     width: 100%;
     color: black;
     background-color:#ed1212;
