@@ -12,3 +12,19 @@ h3.text2{
     background-color: green;
 }
 /* 此处对于h3标签定义了不同的样式，通过.进行区分 */
+
+.box1{
+    float: left;
+    background-color: red;
+    margin: 0px,3px,0px,0px;
+}
+.box2{
+    float: left;
+    background-color: black;
+    color: rgb(43, 198, 38);
+}
+.box3{
+    width: 500;
+    height: 500;
+    background-color: blue;
+}

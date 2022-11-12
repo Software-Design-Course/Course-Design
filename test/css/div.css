@@ -1,11 +1,19 @@
 .index_top{
-    width: 100%;
+    width: 1600px;
     height: 60px;
     color: white;
     background-color: aquamarine;
 }
 .homepage{
     float: left;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    /* 想要设置居中，必须设置长和宽，包括div的长和宽以及div包含内容的长和宽 */
+    line-height: 60px;
+}
+.homepage1{
+    float: right;
     width: 70px;
     height: 60px;
     text-align: center;
