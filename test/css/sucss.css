@@ -130,9 +130,10 @@ a{
 }
 .search_input{
     margin-top:10px;
-    width:400px;
+    width:402px;
     height:30px;
     border: 2px solid red;
+    border-radius: 10px 0px 0px 10px;
 }
 .hotwords{
     width:400px;
@@ -154,15 +155,17 @@ a{
     background-color: red;
     border:0;
     color:white;
+    border-radius: 0px 10px 10px 0px;
 }
 .search_button button:hover{
     box-shadow: 7px 7px 4px -6px rgba(0, 0, 0, .4);
 }
 .search_input input{
-    width:401px;
+    width:403px;
     height:30px;
     border:0;
     outline:none;
+    border-radius: 10px 0px 0px 10px;
 }
 div.homepage1{
     float: left;
