@@ -1,7 +1,7 @@
 html,body{width:100vw;}
 div.layout{
     width:100%;
-    background-color: #e3e3e3;
+    background-color: #e3e3e3
 }
 .index_div{
     width: 100%;
@@ -32,32 +32,48 @@ div.index_mid{
     float: left;
     color: black;
     width:100%;
-    background-color:#ed1212;
+    min-width:1200px;
+    background-color:white;
     position:absolute;
-    margin: auto;
-    top: 80px;
+    margin:auto;
+    /*top: 80px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
 
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
 
-    overflow: scroll; 
+    /* overflow: scroll; */
 }
 
 div.index_text{
     float: left;
     width: 22%;
+    min-width:221px;
     text-align: center;
 }
 
 .text_geng{
     float: left;
     width: 100%;
+    background-color:pink;
+    color:black;
 }
-.homepage{
+.text_geng1{
+    float: left;
+    width: 100%;
+    color:black;
+    margin-bottom:50px;
+    background-color:pink;
+}
+p.text_wenzi{
+    text-align:left;
+    text-indent:2em;
+    
+}
+div.homepage{
     float: left;
     width: 70px;
     height: 60px;
@@ -80,11 +96,15 @@ div.index_text{
     box-shadow: none;
 }
 .text_geng:hover {
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 4px -6px rgba(0, 0, 0, .4);
     border-color: #eee;
     transition: all .2s ease-in-out;
   }
-
+.text_geng1:hover {
+    box-shadow: 10px 10px 4px -6px rgba(0, 0, 0, .4);
+    border-color: #eee;
+    transition: all .2s ease-in-out;
+  }
 .logo{
     float: left;
     width: 60px;
@@ -93,14 +113,55 @@ div.index_text{
 .top_text{
     width: 70px;
     height: 60px;
-   line-height: 60px;
+    line-height: 60px;
+    color:blue;
 }
 .homepage:hover{
     background-color: white;
     color: black;
 }
-a:hover{
+.text_tpye_blod:hover{
     color: black;
+}
+a{
+    text-decoration: none;
+    /*鼠标未放置在超链接上时，超链接上无下划线*/
+}
+.text_tpye_blod{
+     color:blue;
+}
+.search_input{
+
+    
+    margin-top:15px;
+    width:400px;
+    height:30px;
+    border: 2px solid red;
+    
+}
+.search_button{
+    float:left;
+    width:70px;
+    height:60px;
+    margin-top:14px;
+}
+.search_button button{
+    width:60px;
+    height:35px;
+}
+.search_input input{
+    width:400px;
+    height:30px;
+    border:0;
+    outline:none;
+}
+
+div.homepage1{
+    float: left;
+    width: 405px;
+    height: 60px;
+  
+    
 }
 /* body{
     background-image:url("../../images/bg.jpg");
