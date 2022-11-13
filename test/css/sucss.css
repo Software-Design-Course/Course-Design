@@ -39,7 +39,7 @@ div.index_mid{
     flex-direction: row;
     justify-content: space-between; 
 
-    overflow: scroll; 
+    /* overflow: scroll; */
 }
 
 div.index_text{
@@ -126,16 +126,36 @@ a{
 }
 .search_input{
 
-    float:left;
-    width:200px;
+    
+    margin-top:15px;
+    width:400px;
     height:30px;
     border: 2px solid red;
-    top:25px;
+    
+}
+.search_button{
+    float:left;
+    width:70px;
+    height:60px;
+    margin-top:14px;
+}
+.search_button button{
+    width:60px;
+    height:35px;
 }
 .search_input input{
-
-    width:200px;
+    width:400px;
     height:30px;
+    border:0;
+    outline:none;
+}
+
+div.homepage1{
+    float: left;
+    width: 405px;
+    height: 60px;
+  
+    
 }
 /* body{
     background-image:url("../../images/bg.jpg");
