@@ -16,6 +16,8 @@ div.layout{
     position: fixed;
     /* margin: 8px;  */
     top: 0;
+
+    min-width:1200px;
 }
 .index_main{
     background-color: rgb(255, 255, 255);
