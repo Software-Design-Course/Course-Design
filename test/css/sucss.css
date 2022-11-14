@@ -21,6 +21,7 @@ div.layout{
     background-color: rgb(255, 255, 255);
     float: left;
     width: 100%;
+    
     display:flex;
     justify-content:center;
     align-items:center;
@@ -174,3 +175,4 @@ a:hover{
 /* body{
     background-image:url("../../images/bg.jpg");
 } */
+
