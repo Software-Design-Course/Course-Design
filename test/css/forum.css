@@ -13,20 +13,26 @@ div.layout{
     color: white;
     background-color: aquamarine;
     /* 设置sticky定位，粘性定位*/
-    position: sticky;
+    position: fixed;
     margin: 8px;
     top: 0;
+
+    min-width:1200px;
 }
 .index_main{
     float: left;
     width: 100%;
+
+    overflow: auto; 
 }
 div.index_mid{
     /* float: left; */
     color: black;
     width:100%;
     
-    overflow: scroll; 
+    overflow: auto; 
+
+    margin-top:80px;
 }
 div.index_text{
     /* float: left; */
