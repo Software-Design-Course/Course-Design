@@ -76,7 +76,7 @@ p{
 }
 div.homepage{
     float: left;
-    width: 70px;
+    width: 90px;
     height: 60px;
     text-align: center;
     /* border: solid; */
@@ -95,7 +95,7 @@ div.homepage{
     height: 60px;
 }
 .top_text{
-    width: 70px;
+    width: 90px;
     height: 60px;
    line-height: 60px;
 }
