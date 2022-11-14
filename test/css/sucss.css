@@ -21,7 +21,7 @@ div.layout{
     background-color: rgb(255, 255, 255);
     float: left;
     width: 100%;
-    
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -88,6 +88,11 @@ div.homepage{
     /*  鼠标移到卡片后出现阴影 */
     padding: 10px;
     box-shadow: none;
+}
+.index_bottom{
+    width: 100%;
+    background-color: rgb(186, 184, 235);
+    text-align: right;
 }
 .text_geng:hover {
     box-shadow: 10px 10px 4px -6px rgba(0, 0, 0, .4);
@@ -170,7 +175,7 @@ div.homepage1{
     height: 60px;
 }
 a:hover{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 /* body{
     background-image:url("../../images/bg.jpg");
