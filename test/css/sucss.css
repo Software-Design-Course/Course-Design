@@ -191,6 +191,7 @@ a.index_bottom:hover{
     height:100%;
     text-align:center;
     display:inline-block;
+    color:blue;
 }
 .homepage .top_text .dt:hover{
     background-color: white;
