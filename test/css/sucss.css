@@ -13,22 +13,22 @@ div.layout{
     color: white;
     background-color: aquamarine;
     /* 设置sticky定位，粘性定位*/
-    position: sticky;
-    margin: 8px;
+    position: fixed;
+    /* margin: 8px;  */
     top: 0;
 }
 .index_main{
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     float: left;
     width: 100%;
-}
-.index_bottom{
-    width: 100%;
-    height: 40px;
     
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* height:100%; */
+    overflow: auto; 
 }
-div.index_mid{
+.index_mid{
     float: left;
     color: black;
     width:80%;
@@ -175,3 +175,4 @@ a:hover{
 /* body{
     background-image:url("../../images/bg.jpg");
 } */
+
