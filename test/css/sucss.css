@@ -72,7 +72,7 @@ p.text_wenzi{
 }
 div.homepage{
     float: left;
-    width: 70px;
+    width: 90px;
     height: 60px;
     text-align: center;
     /* border: solid; */
@@ -88,7 +88,6 @@ div.homepage{
     text-indent: 2em;
     margin: 20px;
     background-color:white;
-    /*  鼠标移到卡片后出现阴影 */
     padding: 10px;
     box-shadow: none;
 }
@@ -113,7 +112,8 @@ div.homepage{
     height: 60px;
 }
 .top_text{
-    width: 70px;
+    
+    width: 90px;
     height: 60px;
     line-height: 60px;
     color:blue;
@@ -184,6 +184,36 @@ a.index_bottom{
     color:blue;
 }
 a.index_bottom:hover{
+    color:black;
+}
+.top_text .dt{
+    width:100%;
+    height:100%;
+    text-align:center;
+    display:inline-block;
+    color:blue;
+}
+.homepage .top_text .dt:hover{
+    background-color: white;
+}
+.top_text .dd{
+    width:90px;
+    height:60px;
+
+    display:none;
+   
+}
+.top_text:hover .dd{
+           display:block;
+           background-color: aquamarine;
+}
+.dd a{
+    color:blue;
+}
+.homepage .dd:hover{
+    background-color:white;
+}
+.dd a:hover{
     color:black;
 }
 /* body{
