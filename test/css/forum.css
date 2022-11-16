@@ -14,7 +14,7 @@ div.layout{
     background-color: aquamarine;
     /* 设置sticky定位，粘性定位*/
     position: fixed;
-    margin: 8px;
+    /* margin: 8px; */
     top: 0;
 
     min-width:1200px;
