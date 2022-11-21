@@ -5,7 +5,6 @@ div.layout{
 }
 .index_div{
     width: 100%;
-    margin: 0;
 }
 .index_top{
     width: 100%;
@@ -14,43 +13,15 @@ div.layout{
     background-color: aquamarine;
     /* 设置sticky定位，粘性定位*/
     position: sticky;
-    /* margin: 8px; */
     top: 0;
 }
-.index_main{
-    background-color: blue;
+.index_mid{
     float: left;
     width: 100%;
-}
-div.index_mid{
-    float: left;
     color: black;
-    width:100%;
     background-color:#ed1212;
-    position:absolute;
-    margin: auto;
-    top: 80px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    /* 子元素多个div居中设置 */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    /* 内容溢出自动增加滑动条，其他情况正常显示 */
-    overflow: auto; 
-}
-
-div.index_text{
-    float: left;
-    width: 22%;
-    text-align: center;
-}
-
-.text_geng{
-    float: left;
-    width: 100%;
+    /* padding:50px; */
+    /* margin:0px;  */
 }
 .homepage{
     float: left;
@@ -61,8 +32,20 @@ div.index_text{
     /* 想要设置居中，必须设置长和宽，包括div的长和宽以及div包含内容的长和宽 */
     line-height: 60px;
 }
-/* 设置鼠标移到梗界面出现阴影效果 */
-.text_geng:hover {
+.homepage2{
+    float:left;
+    width: 170px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    text-indent: 2em;
+    margin: 20px;
+    background-color:white;
+    /*  鼠标移到卡片后出现阴影 */
+    padding: 10px;
+    box-shadow: none;
+}
+.homepage2:hover {
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .2);
     border-color: #eee;
     transition: all .2s ease-in-out;
@@ -78,12 +61,13 @@ div.index_text{
     height: 60px;
    line-height: 60px;
 }
-/* 设置鼠标移到top的页签上的效果 */
+.top_ui{
+    float: left;
+}
 .homepage:hover{
     background-color: white;
     color: black;
 }
-/* 设置鼠标移到链接上的效果 */
 a:hover{
     color: black;
 }
