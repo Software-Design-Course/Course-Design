@@ -15,9 +15,12 @@
     <meta name="author" content="weidongting">
     <!-- 网站页签 小图标 -->
     <link rel="shortcut icon" href="../images/icons/website_icon.png">
+    <!-- 导入外部css文件 -->
     <style>
-        @import url(./css/sucss.css);
+        @import url(./css/index.css);
     </style>
+    <!-- 导入外部js文件 -->
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -118,15 +121,11 @@
             </div>
             <div class="index_main">
                 <div class="index_mid">
-                    <div class="index_text">
+                    <div class="index_text" id="table1">
                         <a href="#" target="_blank">
                             <div class="text_geng">
-                                <p>
                                 <h4>芭比Q了</h4>
-                                </p>
-                                <p>
                                 <h5>简介:</h5>
-                                </p>
                                 <p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>
                                 <img src="./imag/bbq.jpg" width="250" height="220">
                             </div>
@@ -171,7 +170,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="index_text">
+                    <div class="index_text" id="table2">
                         <a href="#" target="_blank">
                             <div class="text_geng">
                                 <p>
@@ -224,7 +223,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="index_text">
+                    <div class="index_text" id="table3">
                         <a href="#" target="_blank">
                             <div class="text_geng">
                                 <p>
@@ -268,7 +267,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="index_text">
+                    <div class="index_text" id="table4">
                         <a href="#" target="_blank">
                             <div class="text_geng">
                                 <p>
@@ -310,11 +309,12 @@
                             </div>
                         </a>
                     </div>
-                    <!-- <div class="index_bottom">
-                        阿巴巴巴吧巴巴爸爸爱爸爸爸爸爸爸爸爸吧
-                    </div> -->
                 </div>
             </div>
+            <div class="index_more"><!-- 点击按钮产生更多的text_geng -->
+                <button onclick="add_more()" class="index_button">点击产生更多</button>
+            </div>
+
             <!-- 一条线 -->
             <hr size="3px" color="gray" style="margin: 0; padding: 0; margin-bottom: 3px;">
             <div class="index_bottom">

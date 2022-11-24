@@ -204,8 +204,8 @@ a.index_bottom:hover{
    
 }
 .top_text:hover .dd{
-           display:block;
-           background-color:white;
+    display:block;
+    background-color:white;
 }
 .dd a{
     color:blue;
@@ -216,7 +216,19 @@ a.index_bottom:hover{
 .dd a:hover{
     color:black;
 }
-/* body{
-    background-image:url("../../images/bg.jpg");
-} */
 
+
+div.index_more{
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.index_button{
+    text-align:center;
+    height:20px;
+    width:200px;
+
+}
