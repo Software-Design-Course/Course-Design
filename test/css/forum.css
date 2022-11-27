@@ -11,19 +11,24 @@ div.layout{
     width: 100%;
     height: 60px;
     color: white;
-    background-color: aquamarine;
+    background-color:white;
     /* 设置sticky定位，粘性定位*/
     position: fixed;
-    /* margin: 8px; */
+    /* margin: 8px;  */
     top: 0;
 
     min-width:1200px;
 }
 .index_main{
+    background-color: whitesmoke;
     float: left;
     width: 100%;
 
-    overflow: auto; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* height:100%; */
+    overflow: auto;  
 }
 div.index_mid{
     /* float: left; */
@@ -101,9 +106,11 @@ div.homepage{
     height: 60px;
 }
 .top_text{
+    
     width: 90px;
     height: 60px;
-   line-height: 60px;
+    line-height: 60px;
+    color:blue;
 }
 .homepage:hover{
     background-color: white;
