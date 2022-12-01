@@ -127,7 +127,7 @@ div.homepage{
 }
 a{
     text-decoration: none;
-    color: green;
+    color: black;
     /*鼠标未放置在超链接上时，超链接上无下划线*/
 }
 .text_tpye_blod{
@@ -231,4 +231,28 @@ div.index_more{
     height:20px;
     width:200px;
 
+}
+
+.footer{
+    width: 100%;
+    color: rgb(178,178,178);
+    overflow: auto; 
+}
+.footer_row{
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(178,178,178);
+    display: flex;
+    flex-direction: row;
+
+}
+.footer_left{
+    margin-left: 50px;
+}
+.footer_right{
+    margin-right: 100px;
 }
