@@ -4,54 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url(./css/login.css);
-    </style>
+    <title>登陆注册</title>
+    <!-- 引入css 和图标图的css  引入才可以生效 -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
 </head>
 <body>
-    <div style="height: 100%;">
-        <div style="width: 800px; height: 300px; margin: 250px auto;">
-            <div class="kuai">
-                <!-- 这是一个使div可以根据内部标签大小来设定大小的代码，而且不受内部是否有float的影响 -->
-                <div class="word">
-                    用户名:
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- 注册 -->
+            <form action="#">
+                <h1>用户注册</h1>
+                
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="email" placeholder="邮箱">
+                <button id="send_code">发送验证码</button>
+                <input type="email" placeholder="验证码">
+                <button>注册</button>
+            </form>
+        </div>
+        <div class="form-container sing-in-container">
+            <!-- 登陆 -->
+            <form action="#">
+                <h1>用户登陆</h1>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <a href="#">忘记密码?</a>
+                <button>登陆</button>
+            </form>
+        </div>
+        <!-- 侧边栏内容 -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-pannel overlay-left">
+                    <h1>已有账号?</h1>
+                    <p>亲爱的快快点我去进行登陆吧。</p>
+                    <button class="ghost" id="signIn">登陆</button>
                 </div>
-                <div class="search_input">
-                    <input type="text" placeholder="请输入用户名">
+                <div class="overlay-pannel overlay-right">
+                    <h1>没有帐号？</h1>
+                    <p>点击注册去注册一个属于你的账号吧。</p>
+                    <button class="ghost" id="signUp">注册</button>
                 </div>
-            </div>
-            <div class="kuai">
-                <div class="word1">
-                    密码:
-                </div>
-                <div class="search_input">
-                    <input type="text" placeholder="请输入密码">
-                </div>
-            </div>
-            <div class="kuai">
-                <div class="word">
-                    验证码:
-                </div>
-                <div class="search_input">
-                    <input type="text" placeholder="请输入验证码">
-                </div>
-            </div>
-            <div class="kuai">
-                <a href="./index.html">
-                    <div class="word2">
-                        <button class="denglu-button">登录</button>
-                    </div>
-                </a>
-            </div>
-            <div class="kuai">
-                <a href="./login.html">
-                    <div class="word3">
-                        注册
-                    </div>
-                </a>
             </div>
         </div>
     </div>
 </body>
+<script src="./js/login.js"></script>
 </html>
