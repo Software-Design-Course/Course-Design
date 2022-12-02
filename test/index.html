@@ -15,7 +15,8 @@
     <meta name="author" content="weidongting">
     <!-- 网站页签 小图标 -->
     <link rel="shortcut icon" href="../images/icons/website_icon.png">
-    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <!-- 使用bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- 导入外部css文件 -->
     <style>
         @import url(./css/index.css);
@@ -26,99 +27,46 @@
 <body>
     <div class="_layout">
         <div class="index_div">
-            <div class="index_top">
-                <div class="logo">
-                    <!-- 网站logo -->
-                    <!-- 此处放置显示logo图代码 -->
-                    <a href="" target="_self"><img src="./imag/geng.png" width="60" height="60"></a>
-                </div>
-                <div class="homepage">
-                    <!-- 首页 -->
-                    <!-- 先放a标签,再放div,一旦点击a区域执行跳转 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示首页ui代码-->
-                        </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    <a class="navbar-brand" href="" target="_self"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></span></a>
+                  </div><!-- /.navbar-header -->
+              
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="" target="_self">首页 <span class="sr-only">(current)</span></a></li>
+                      <li><a href="./forum.html">论坛</a></li>
+                      <li><a href="#">分类</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="示例：xx梗">
+                        <button type="submit" class="btn btn-default" onclick=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索</button>
+                      </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
 
-                        <div class="top_text">
-                            <a href="" target="_self">
-                                <span class="text_tpye_blod">首页</span><!--显示"首页"-->
-                            </a>
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage">
-                    <!-- 论坛 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示论坛ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <a href="./forum.html" target="_self">
-                                <span class="text_tpye_blod">论坛</span><!-- 显示"论坛"-->
-                            </a>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="homepage">
-                    <!-- 分类 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示分类ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <span class="text_tpye_blod">分类</span><!-- 显示"分类"-->
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage1">
-                    <!-- 搜索框 -->
-                    <div class="search_input">
-                        <input type="text" placeholder="示例：xx梗"> <!-- 输入框显示代码 -->
-                    </div>
-                    <div class="hotwords">
-                        <a href="#" target="_blank">只有说声抱歉</a>
-                        <a href="#" target="_blank">别急</a>
-                        <a href="#" target="_blank">蓝色妖姬</a>
-                        <a href="#" target="_blank">鸡你太美</a>
-                    </div>
-                </div>
-                <div class="search_button">
-                    <!-- 搜索按钮 -->
-                    <button>搜索</button>
-                    <!--搜索按钮 -->
-                </div>
-                <div class="homepage" style="float: right">
-                    <!-- 设置 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示设置ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <span class="text_tpye_blod">设置</span><!-- 显示"设置"-->
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage" style="float: right">
-                    <!-- 个人中心 -->
-                    <a href="login.html">
-                        <div class="top_ui">
-                            <!-- 此处放置显示个人中心ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <!-- <span class="text_tpye_blod">个人中心</span>显示"个人中心" -->
-                            <div class="dt">个人中心</div>
-                            <div class="dd">
-                                  <a href="#" target="_blank">我的信息</a>
-                            </div>
-                            <div class="dd">
-                                  <a href="#" target="_blank">修改资料</a>
-                            </div>
-                        </div>
-                    <!-- </a> -->
-                </div>
-            </div>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">我的信息</a></li>
+                          <!-- 创建一条线 -->
+                          <!-- <li role="separator" class="divider"></li> -->
+                          <li><a href="#">修改资料</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">设置</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
             <div class="index_main">
                 <div class="index_mid">
                     <div class="index_text" id="table1">
@@ -127,7 +75,7 @@
                                 <h4>芭比Q了</h4>
                                 <h5>简介:</h5>
                                 <p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>
-                                <img src="./imag/bbq.jpg" width="250" height="220">
+                                <img src="./imag/bbq.jpg" class="img-responsive" alt="Responsive image">
                             </div>
                         </a>
                         <a href="#" target="_blank">
@@ -312,7 +260,7 @@
                 </div>
             </div>
             <div class="index_more"><!-- 点击按钮产生更多的text_geng -->
-                <button onclick="add_more()" class="index_button">点击产生更多</button>
+                <button onclick="add_more()" class="btn btn-primary btn-lg">点击产生更多</button>
             </div>
             <div class="footer">
                 <div class="footer_row">
@@ -335,4 +283,6 @@
     </div>
 </body>
 <script src="./js/index.js"></script>
+<script src="../js/jquery-3.6.1.js"></script>
+<script src="../js/bootstrap.js"></script>
 </html>
