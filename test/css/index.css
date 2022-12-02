@@ -24,17 +24,15 @@ div.layout{
     float: left;
     width: 100%;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
     /* height:100%; */
-    overflow: auto; 
+    /* overflow: auto;  */
+    /* display: block; */
 }
 .index_mid{
     float: left;
     color: black;
-    width:80%;
-    min-width:1200px;
+    width:70%;
+    /* min-width:1200px; */
     background-color:whitesmoke;
     /* position:absolute;
     margin:auto;
@@ -62,7 +60,6 @@ div.index_text{
     float: left;
     width: 100%;
     color:black;
-    margin-bottom:25px;
     background-color:white;
     border-radius: 10px 10px 10px 10px;
 }
@@ -255,4 +252,8 @@ div.index_more{
 }
 .footer_right{
     margin-right: 100px;
+}
+a.item{
+    width: 276px;
+    padding: 20px;
 }
