@@ -12,7 +12,7 @@
 //     child_child.setAttribute('class','text_geng');
 //     // 需要优化的地方：如何在加载源码的同时带上p标签的style
 //     child_child.innerHTML=" <h4>芭比Q了</h4><h5>简介:</h5><p>芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>"
-    
+
 //     child.appendChild(child_child);
 //     table1.appendChild(child);
 // }
@@ -21,55 +21,47 @@
 //     $("#myModal").modal("show");
 // });
 
-function getDocumentTop() {
-    var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
-    if (document.body) {
-        bodyScrollTop = document.body.scrollTop;
-    }
-    if (document.documentElement) {
-        documentScrollTop = document.documentElement.scrollTop;
-    }
-    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
-    return scrollTop;
-}
+// var screen = window.screen.height;//可视区域高度
+// var compare = document.body.clientHeight-document.body.scrollTop;//可视区域顶部距离整个网页的底部距离
 
-//可视窗口高度
-function getWindowHeight() {
-    var windowHeight = 0;
-    if (document.compatMode == "CSS1Compat") {
-        windowHeight = document.documentElement.clientHeight;
-    } else {
-        windowHeight = document.body.clientHeight;
-    }
-    return windowHeight;
-}
+// var loadState = null;//记录加载状态的变量
+// window.onscroll = function(){
+//  //如果接近底部
+//  if(screen+100 >= compare){
+//   //如果加载状态为null,则可以继续加载
+//   if(!loadState){
+//    loadState = setTimeout(function(){
+//     alert("helll!")
+//     //这里填写你所需要的操作...
+//     //下面的是必须的
+//     clearTimeout(loadState);
+//     loadState = null;//设置为空,否则清除掉也没用
+//    },2000);
+//   }
+//  }
+// }
 
-//滚动条滚动高度
-function getScrollHeight() {
-    var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
-    if (document.body) {
-        bodyScrollHeight = document.body.scrollHeight;
-    }
+// 返回顶部按钮js部分
+$(document).ready(function(){
+    $(window).scroll(function () {
+           if ($(this).scrollTop() > 50) {
+               $('#back-to-top').fadeIn();
+           } else {
+               $('#back-to-top').fadeOut();
+           }
+       });
+       // 点击后滑动条距顶部高度设为0
+       $('#back-to-top').click(function () {
+           $('#back-to-top').tooltip('hide');
+           $('body,html').animate({
+               scrollTop: 0
+           }, 800);
+           return false;
+       });
+       
+       $('#back-to-top').tooltip('show');
 
-    if (document.documentElement) {
-        documentScrollHeight = document.documentElement.scrollHeight;
-    }
-    scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
-    return scrollHeight;
-}
+});
 
 
-/*
-当滚动条滑动，触发事件，判断是否到达最底部
-然后调用ajax处理函数异步加载数据
-*/
-window.onscroll = function () {
-    //监听事件内容
-    if (getScrollHeight() == getWindowHeight() + getDocumentTop()) {
-        //当滚动条到底时,这里是触发内容
-        //异步请求数据,局部刷新dom
-        $("#myModal").modal("show");
-    }
-}
 
-    

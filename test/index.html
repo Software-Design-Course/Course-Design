@@ -23,9 +23,8 @@
     </style>
 
 </head>
-
 <body>
-    <div class="_layout" id="container">
+    <div class="_layout" id="top">
         <div class="index_div">
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
@@ -77,7 +76,7 @@
                     <div class="col-lg-2 col-md-2 col-sm-2"></div>
                     <div class="col-lg-10 col-md-10 col-sm-10 index_mid">
                         <div class="container  text-center" id="masonry">
-                            <a href="#" target="_blank" class=" item">
+                            <a href="#" target="_blank" class="item">
                                 <div class="text_geng">
                                     <h4>芭比Q了</h4>
                                     <h5>简介:</h5>
@@ -276,29 +275,29 @@
 
 
             </div>
+            <p style="width:100%;height: 1px;" class="blank"></p>
             <div class="index_more">
-                <!-- 点击按钮产生更多的text_geng (作废)-->
-                <button  id="testbtn" class="btn btn-primary btn-lg">点击产生更多</button>
+                <!-- 点击按钮产生更多的卡片 (作废)-->
+                <button id="add_btn" class="btn btn-primary btn-lg">点击产生更多</button>
                 <!-- data-toggle="modal" data-target="#myModal" -->
             </div>
-            <div class="footer">
-                <div class="footer_row">
-                    <div class="footer_left">
-                        <p style="margin-top: 8px;">联系我们</p>
-                        <p> 犀浦校区地址:中国四川省成都市郫都区犀安路 999 号西南交通大学</p>
-                        <p> 邮政编码:611756 </p>
-                        <p style="margin-bottom: 8px;"> 电话:+11 4514 </p>
-                    </div>
-                    <div class="footer_right">
-                        <p><a href="https://www.swjtu.edu.cn/">西南交通大学</a></p>
-                        <p><a href="http://jwc.swjtu.edu.cn/">西南交通大学教务处</a></p>
-                        <p><a href="https://sist.swjtu.edu.cn/">西南交通大学信息科学与技术学院</a></p>
-                        <p><a href="https://mys.swjtu.edu.cn/">西南交通大学茅以升学院</a></p>
-                    </div>
+            <div class="row" style="width:100%">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                    <p style="margin-top: 8px;">联系我们</p>
+                    <p> 犀浦校区地址:中国四川省成都市郫都区犀安路 999 号西南交通大学</p>
+                    <p> 邮政编码:611756 </p>
+                    <p style="margin-bottom: 8px;"> 电话:+11 4514 </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center hidden-md hidden-sm">
+                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/">西南交通大学</a></p>
+                    <p><a href="http://jwc.swjtu.edu.cn/">西南交通大学教务处</a></p>
+                    <p><a href="https://sist.swjtu.edu.cn/">西南交通大学信息科学与技术学院</a></p>
+                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/">西南交通大学茅以升学院</a></p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- 模态框 -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -317,6 +316,12 @@
             </div>
         </div>
     </div>
+    <!-- 返回顶部按钮 -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="返回顶部" data-toggle="tooltip" data-placement="left">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+
+
 </body>
 <!-- 必须按此顺序引入js文件，否则会发生错误 -->
 <script src="../js/jquery-3.6.1.js"></script>
@@ -325,4 +330,5 @@
 <script src="../js/masonry-docs.min.js"></script>
 <script src="./js/t.js"></script>
 <script src="./js/index.js"></script>
+
 </html>
