@@ -15,316 +15,320 @@
     <meta name="author" content="weidongting">
     <!-- 网站页签 小图标 -->
     <link rel="shortcut icon" href="./images/icons/website_icon.png">
+    <!-- 使用bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 导入外部css文件 -->
     <style>
-        @import url(./css/sucss.css);
+        @import url(./css/index.css);
     </style>
+
 </head>
-
 <body>
-    <div class="_layout">
+    <div class="_layout" id="top">
         <div class="index_div">
-            <div class="index_top">
-                <div class="logo">
-                    <!-- 网站logo -->
-                    <!-- 此处放置显示logo图代码 -->
-                    <a href="" target="_self"><img src="./images/geng.png" width="60" height="60"></a>
-                </div>
-                <div class="homepage">
-                    <!-- 首页 -->
-                    <!-- 先放a标签,再放div,一旦点击a区域执行跳转 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示首页ui代码-->
-                        </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="" target="_self"><span class="glyphicon glyphicon-book"
+                                aria-hidden="true"></span></span></a>
+                    </div><!-- /.navbar-header -->
 
-                        <div class="top_text">
-                            <a href="" target="_self">
-                                <span class="text_tpye_blod">首页</span><!--显示"首页"-->
-                            </a>
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage">
-                    <!-- 论坛 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示论坛ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <a href="./forum.html" target="_self">
-                                <span class="text_tpye_blod">论坛</span><!-- 显示"论坛"-->
-                            </a>
-                        </div>
-                    </a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="" target="_self">首页 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="./forum.html">论坛</a></li>
+                            <li><a href="#">分类</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="示例：xx梗">
+                                <button type="submit" class="btn btn-default" onclick=""><span
+                                        class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索</button>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
 
-                </div>
-                <div class="homepage">
-                    <!-- 分类 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示分类ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <span class="text_tpye_blod">分类</span><!-- 显示"分类"-->
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage1">
-                    <!-- 搜索框 -->
-                    <div class="search_input">
-                        <input type="text" placeholder="示例：xx梗"> <!-- 输入框显示代码 -->
-                    </div>
-                    <div class="hotwords">
-                        <a href="#" target="_blank">只有说声抱歉</a>
-                        <a href="#" target="_blank">别急</a>
-                        <a href="#" target="_blank">蓝色妖姬</a>
-                        <a href="#" target="_blank">鸡你太美</a>
-                    </div>
-                </div>
-                <div class="search_button">
-                    <!-- 搜索按钮 -->
-                    <button>搜索</button>
-                    <!--搜索按钮 -->
-                </div>
-                <div class="homepage" style="float: right">
-                    <!-- 设置 -->
-                    <a href="">
-                        <div class="top_ui">
-                            <!-- 此处放置显示设置ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <span class="text_tpye_blod">设置</span><!-- 显示"设置"-->
-                        </div>
-                    </a>
-                </div>
-                <div class="homepage" style="float: right">
-                    <!-- 个人中心 -->
-                    <a href="login.html">
-                        <div class="top_ui">
-                            <!-- 此处放置显示个人中心ui代码-->
-                        </div>
-                        <div class="top_text">
-                            <!-- <span class="text_tpye_blod">个人中心</span>显示"个人中心" -->
-                            <div class="dt">个人中心</div>
-                            <div class="dd">
-                                  <a href="#" target="_blank">我的信息</a>
-                            </div>
-                            <div class="dd">
-                                  <a href="#" target="_blank">修改资料</a>
-                            </div>
-                        </div>
-                    <!-- </a> -->
-                </div>
-            </div>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">我的信息</a></li>
+                                    <!-- 创建一条线 -->
+                                    <!-- <li role="separator" class="divider"></li> -->
+                                    <li><a href="#">修改资料</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">设置</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
             <div class="index_main">
-                <div class="index_mid">
-                    <div class="index_text">
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>芭比Q了</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>
-                                <img src="./images/bbq.jpg" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>别急</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">别急是在v吧很流行的一个梗,别人说了什么都可以用“别急”“听我说你先别急”“我知道你很急但是先别急”来回应他,几乎成了万能句式。
-                                </p>
-                                <p class="text_wenzi">
-                                    追根溯源,别急梗出自b站up主djgun的经典发言。d老师专门做电棍的鬼畜音频,直播时候喜欢放鬼图和阴间bgm来整人,因此直播间经常被封,然后djgun就会发动态表示"别急"。
-                                    之后别急的梗就被动物园粉丝带火了，扩散到v圈。</p>
-                                <img src="./images/bieji.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>半透膜大学</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">具体指疫情期间，个别高校选择性通过的防疫政策，即只限制学生外出，不限制高校老师，家属，甚至校外人员进入的现象。</p>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>为爱冲锋的勇士</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">指的是山东服装学院发生的一起事件。</p>
-                                <p class="text_wenzi">这名男生已经和女生结婚，但是在这个男生努力在外面打工赚钱的时候，这个女生在校园里面与另一名男生谈恋爱十个月，知道之后的男生怒从‌‌‌‌​​​‌​‌‌‌‌‌​‌‌‌​​‌‌心起，因为疫情管控原因无法到达山东，于是骑了三天三夜的自行车，来到校园翻墙找女生讨要说法，却不慎遭到女生男友和四名朋友的堵截，这名男生勇敢一挑五。</p>
-                            </div>
-                        </a>
+                <div class="row" style="width: 100%;">
+                    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 index_mid">
+                        <div class="container  text-center" id="masonry">
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <h4>芭比Q了</h4>
+                                    <h5>简介:</h5>
+                                    <p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>
+                                    <img src="./images/bbq.jpg" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>别急</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">
+                                        别急是在v吧很流行的一个梗,别人说了什么都可以用“别急”“听我说你先别急”“我知道你很急但是先别急”来回应他,几乎成了万能句式。
+                                    </p>
+                                    <p class="text_wenzi">
+                                        追根溯源,别急梗出自b站up主djgun的经典发言。d老师专门做电棍的鬼畜音频,直播时候喜欢放鬼图和阴间bgm来整人,因此直播间经常被封,然后djgun就会发动态表示"别急"。
+                                        之后别急的梗就被动物园粉丝带火了，扩散到v圈。</p>
+                                    <img src="./images/bieji.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>半透膜大学</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">具体指疫情期间，个别高校选择性通过的防疫政策，即只限制学生外出，不限制高校老师，家属，甚至校外人员进入的现象。</p>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>为爱冲锋的勇士</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">指的是山东服装学院发生的一起事件。</p>
+                                    <p class="text_wenzi">
+                                        这名男生已经和女生结婚，但是在这个男生努力在外面打工赚钱的时候，这个女生在校园里面与另一名男生谈恋爱十个月，知道之后的男生怒从‌‌‌‌​​​‌​‌‌‌‌‌​‌‌‌​​‌‌心起，因为疫情管控原因无法到达山东，于是骑了三天三夜的自行车，来到校园翻墙找女生讨要说法，却不慎遭到女生男友和四名朋友的堵截，这名男生勇敢一挑五。
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>一眼丁真</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">一眼真的反义词，即看一眼就知道是假的，也算是个谐音梗。
+                                        丁真的走红，引起了很多人的反感，同时丁真因为被夸眼睛很纯真，有一种野性的美，所以贴吧就有人恶搞“一眼真”该‌​​​​​‌​​​​​​​‌​‌‌‌梗来阴阳怪气丁真。
+                                    </p>
+                                    <p class="text_wenzi">一般网友会评论“一眼真”来讽刺p图的人，后逐渐演变为“一眼丁真，鉴定为假”，
+                                        并以此为契机开始了大规模对丁真的p图用以嘲讽他人</p>
+                                    <img src="./images/dz.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>差不多得了</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">这句话最初是16年抽象tv盛传磊哥的视频，“你们这帮炒作狗啊差不多就得了吧”，后来在神吧（神奈川冲浪里吧）流行，
+                                        神吧被封后大量用户转移至孙吧（孙笑川吧）。使用此口头禅。通常用来讽刺玩烂梗的人。</p>
+                                    <img src="./images/cbddl.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>安塞腰鼓</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">
+                                        网友一些发疯文学的梗。出自初中语文课本中的文章《安塞腰鼓》，描写陕西的传统舞蹈安塞腰鼓，因为文章描写的措辞激昂，押韵众多，节奏感强，朗朗上口，读起来很像发疯情绪亢‌‌‌​​​​‌​‌​‌‌​​‌‌‌​奋的样子。节选片段“扣起人起来就发狠了，忘情了，没命了！百十个手指的残影，如百十块被强震不断击起的石头，狂舞在你的面前。骤雨一样，是急促的鼓点;旋风一样，是飞扬的流苏;乱蛙一样，是蹦跳的脚步;火花一样，是闪射的瞳仁;斗虎一样，是强健的风姿。相方的比上，爆出一场多么壮阔、多么豪放、多么火烈的旷工哇”
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>臣犯了十宗罪</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">
+                                        出自最近很火的一段土味分手文案，堪称最近互联网复古尴尬文学顶流。“臣这一退，就是一辈子。臣一罪：遇你；二罪，识你；三罪，交你；四罪，悦你；五罪，想你；六罪，顾你；七‌‌‌​​​​‌​‌​‌‌​​‌‌‌​罪，守你；八罪，护你；九罪，恋你；十罪，爱你。十罪俱全，是臣罪该万死，臣退了”
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>到达世界最高城理塘</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">这个梗出自抖音博主丽丽在到达理塘时多说的一句话，原话为：到达世界最高城理塘!太美丽了理塘，哎呀这不丁真吗，
+                                        还是看看远处的雪山吧家人们; 丽丽在抖音上的形象是诙谐幽默的，而他在达到理塘说丁真这个视频，本意上并没有想着搞笑，只是调侃一下;
+                                        由于丽丽和丁真都有一定的流量，让二人的梦幻联动从此刻开始了，网友们在拍摄风景视频的时候纷纷开启了模仿;让这句话成为在抖音上非常热门的一个梗。
+                                    </p>
+                                    <img src="./images/ddsjzgc.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>老六</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">“你个老六”是非常流行的网络用语，最早出自游戏《CSGO》中。后来也逐渐变成知名主播茄子的经典口头禅之一。
+                                        最开始“老六”一词指的是游戏中的自由人（老阴b），即水平高超，蹲人思路清奇，就像葫芦娃里的会隐身的六娃，如隐形人一般给人一种出其不意的感觉。
+                                        但后来在游戏中那些游离于队伍之外，打的很菜，不懂得跟队友配合的人，也被称之为“老六”。也有不少人用“老六”来形容一些让人感到无语的人和事。
+                                    </p>
+                                    <img src="./images/nzgll.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>只有说声抱歉</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">最开始出自数电实验龙老师在QQ群里发言的截图，后一直被转载。现在已经成为了数电学子的经典表情包，常用来回复无法做成的事情
+                                    </p>
+                                    <img src="./images/sorry.jpg" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>羊了个羊</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">
+                                        这个梗出自于近期火爆全网的高智商挑战游戏《羊了个羊》，无数玩家为之疯狂，彻夜不眠只为通关；第一关可以随便点点，大家都觉得很简单，
+                                        第二关虽然看起来也很简单，但是挑战过程中给我们来了个下马威；羊了个羊本身是作为一款小程序游戏，但是因为这种从第一关到第二关毫无缓和的难度提升空间令人叫苦不迭；
+                                        第一关和第二关，是从天上到地下的落差感，从幼升小到上清华，一度让网友们精神失常。</p>
+                                    <img src="./images/ylgy.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>鸡你太美</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">这个梗出自名为只因你太美的歌曲，是由组合SWIN-S所演唱的一首歌曲，后由蔡徐坤的二次演绎走红；
+                                        他在选秀节目偶像练习生上二次表演这首歌曲，却因为太过喜感而出圈；随着蔡徐坤的大火，黑粉也越来越多，最近蔡徐坤成为NBA篮球形象大使，
+                                        有人把蔡徐坤两年前的一段篮球视频翻出来，而“鸡你太美”是这段舞蹈的BGM“只因你太美”的谐音。
+                                        BGM中歌词“只因你太美”听起来有点像“鸡你太美”所以就被网友调侃成鸡你太美。</p>
+                                    <img src="./images/jntm.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="item">
+                                <div class="text_geng">
+                                    <p>
+                                    <h4>你最好是</h4>
+                                    </p>
+                                    <p>
+                                    <h5>简介:</h5>
+                                    </p>
+                                    <p class="text_wenzi">
+                                        你最好是，坤梗中的梗，原来是当ikun遇到疑似小黑子假扮的ikun说的，现在被用来调侃真ikun，还衍生出了谐音，梨最好食，你最豪士</p>
+                                </div>
+                            </a>
+
+
+                        </div>
                     </div>
-                    <div class="index_text">
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>一眼丁真</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">一眼真的反义词，即看一眼就知道是假的，也算是个谐音梗。
-                                    丁真的走红，引起了很多人的反感，同时丁真因为被夸眼睛很纯真，有一种野性的美，所以贴吧就有人恶搞“一眼真”该‌​​​​​‌​​​​​​​‌​‌‌‌梗来阴阳怪气丁真。
-                                </p>
-                                <p class="text_wenzi">一般网友会评论“一眼真”来讽刺p图的人，后逐渐演变为“一眼丁真，鉴定为假”，
-                                    并以此为契机开始了大规模对丁真的p图用以嘲讽他人</p>
-                                <img src="./images/dz.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>差不多得了</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">这句话最初是16年抽象tv盛传磊哥的视频，“你们这帮炒作狗啊差不多就得了吧”，后来在神吧（神奈川冲浪里吧）流行，
-                                    神吧被封后大量用户转移至孙吧（孙笑川吧）。使用此口头禅。通常用来讽刺玩烂梗的人。</p>
-                                <img src="./images/cbddl.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>安塞腰鼓</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">网友一些发疯文学的梗。出自初中语文课本中的文章《安塞腰鼓》，描写陕西的传统舞蹈安塞腰鼓，因为文章描写的措辞激昂，押韵众多，节奏感强，朗朗上口，读起来很像发疯情绪亢‌‌‌​​​​‌​‌​‌‌​​‌‌‌​奋的样子。节选片段“扣起人起来就发狠了，忘情了，没命了！百十个手指的残影，如百十块被强震不断击起的石头，狂舞在你的面前。骤雨一样，是急促的鼓点;旋风一样，是飞扬的流苏;乱蛙一样，是蹦跳的脚步;火花一样，是闪射的瞳仁;斗虎一样，是强健的风姿。相方的比上，爆出一场多么壮阔、多么豪放、多么火烈的旷工哇”</p>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>臣犯了十宗罪</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">出自最近很火的一段土味分手文案，堪称最近互联网复古尴尬文学顶流。“臣这一退，就是一辈子。臣一罪：遇你；二罪，识你；三罪，交你；四罪，悦你；五罪，想你；六罪，顾你；七‌‌‌​​​​‌​‌​‌‌​​‌‌‌​罪，守你；八罪，护你；九罪，恋你；十罪，爱你。十罪俱全，是臣罪该万死，臣退了”</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="index_text">
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>到达世界最高城理塘</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">这个梗出自抖音博主丽丽在到达理塘时多说的一句话，原话为：到达世界最高城理塘!太美丽了理塘，哎呀这不丁真吗，
-                                    还是看看远处的雪山吧家人们; 丽丽在抖音上的形象是诙谐幽默的，而他在达到理塘说丁真这个视频，本意上并没有想着搞笑，只是调侃一下;
-                                    由于丽丽和丁真都有一定的流量，让二人的梦幻联动从此刻开始了，网友们在拍摄风景视频的时候纷纷开启了模仿;让这句话成为在抖音上非常热门的一个梗。
-                                </p>
-                                <img src="./images/ddsjzgc.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>老六</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">“你个老六”是非常流行的网络用语，最早出自游戏《CSGO》中。后来也逐渐变成知名主播茄子的经典口头禅之一。
-                                    最开始“老六”一词指的是游戏中的自由人（老阴b），即水平高超，蹲人思路清奇，就像葫芦娃里的会隐身的六娃，如隐形人一般给人一种出其不意的感觉。
-                                    但后来在游戏中那些游离于队伍之外，打的很菜，不懂得跟队友配合的人，也被称之为“老六”。也有不少人用“老六”来形容一些让人感到无语的人和事。
-                                </p>
-                                <img src="./images/nzgll.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>只有说声抱歉</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">最开始出自数电实验龙老师在QQ群里发言的截图，后一直被转载。现在已经成为了数电学子的经典表情包，常用来回复无法做成的事情</p>
-                                <img src="./images/sorry.jpg" width="250" height="100">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="index_text">
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>羊了个羊</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">这个梗出自于近期火爆全网的高智商挑战游戏《羊了个羊》，无数玩家为之疯狂，彻夜不眠只为通关；第一关可以随便点点，大家都觉得很简单，
-                                    第二关虽然看起来也很简单，但是挑战过程中给我们来了个下马威；羊了个羊本身是作为一款小程序游戏，但是因为这种从第一关到第二关毫无缓和的难度提升空间令人叫苦不迭；
-                                    第一关和第二关，是从天上到地下的落差感，从幼升小到上清华，一度让网友们精神失常。</p>
-                                <img src="./images/ylgy.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>鸡你太美</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">这个梗出自名为只因你太美的歌曲，是由组合SWIN-S所演唱的一首歌曲，后由蔡徐坤的二次演绎走红；
-                                    他在选秀节目偶像练习生上二次表演这首歌曲，却因为太过喜感而出圈；随着蔡徐坤的大火，黑粉也越来越多，最近蔡徐坤成为NBA篮球形象大使，
-                                    有人把蔡徐坤两年前的一段篮球视频翻出来，而“鸡你太美”是这段舞蹈的BGM“只因你太美”的谐音。
-                                    BGM中歌词“只因你太美”听起来有点像“鸡你太美”所以就被网友调侃成鸡你太美。</p>
-                                <img src="./images/jntm.png" width="250" height="220">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="text_geng">
-                                <p>
-                                <h4>你最好是</h4>
-                                </p>
-                                <p>
-                                <h5>简介:</h5>
-                                </p>
-                                <p class="text_wenzi">你最好是，坤梗中的梗，原来是当ikun遇到疑似小黑子假扮的ikun说的，现在被用来调侃真ikun，还衍生出了谐音，梨最好食，你最豪士</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- <div class="index_bottom">
-                        阿巴巴巴吧巴巴爸爸爱爸爸爸爸爸爸爸爸吧
-                    </div> -->
+                    <div class="col-lg-2 col-md-2 col-sm-2"></div>
                 </div>
+
+
             </div>
-            <!-- 一条线 -->
-            <hr size="3px" color="gray" style="margin: 0; padding: 0; margin-bottom: 3px;">
-            <div class="index_bottom">
-                <div>
-                    <a class="index_bottom" href="">联系我们</a>
+            <p style="width:100%;height: 1px;" class="blank"></p>
+            <div class="index_more">
+                <!-- 点击按钮产生更多的卡片 (作废)-->
+                <button id="add_btn" class="btn btn-primary btn-lg">点击产生更多</button>
+                <!-- data-toggle="modal" data-target="#myModal" -->
+            </div>
+            <div class="row" style="width:100%">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                    <p style="margin-top: 8px;">联系我们</p>
+                    <p> 犀浦校区地址:中国四川省成都市郫都区犀安路 999 号西南交通大学</p>
+                    <p> 邮政编码:611756 </p>
+                    <p style="margin-bottom: 8px;"> 电话:+11 4514 </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center hidden-md hidden-sm">
+                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/">西南交通大学</a></p>
+                    <p><a href="http://jwc.swjtu.edu.cn/">西南交通大学教务处</a></p>
+                    <p><a href="https://sist.swjtu.edu.cn/">西南交通大学信息科学与技术学院</a></p>
+                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/">西南交通大学茅以升学院</a></p>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    你好
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部按钮 -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="返回顶部" data-toggle="tooltip" data-placement="left">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
 
-    </div>
-    </div>
+
 </body>
+<!-- 必须按此顺序引入js文件，否则会发生错误 -->
+<script src="./js/jquery-3.6.1.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/masonry.pkgd.js"></script>
+<script src="./js/masonry-docs.min.js"></script>
+<script src="./js/t.js"></script>
+<script src="./js/index.js"></script>
+
 </html>
