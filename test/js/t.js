@@ -1,13 +1,25 @@
-var example=' <a href="#" target="_blank" class="item">\n' +
-'<div class="text_geng">\n' +
-'<h4>芭比Q了</h4>\n' +
-'<h5>简介:</h5>\n' +
-'<p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>\n' +
-'</div>\n' +
-'</a>';
 
 
+// obj=JSON.parse(text);
 
+
+// var example=' <a href="#" target="_blank" class="item">\n' +
+// '<div class="text_geng">\n' +
+// '<h4>'+obj.apple.name+'</h4>\n' +
+// '<h5>简介:</h5>\n' +
+// '<p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>\n' +
+// '</div>\n' +
+// '</a>';
+
+
+var ajax=function(){
+    $.getJSON("",function(data){
+        $.each(data,function(i,item){
+            alert(item[0].name);
+        });
+
+    });
+}
 
 
     
@@ -21,8 +33,10 @@ $(function () {
     });
     // 点击查看更多按钮 或者往下刷新时
     $("#add_btn").click(function () {
-        $newElems = $(example);
-        $container.append($newElems);
-        $container.masonry('appended', $newElems,true);
+        ajax();
+
+        // $newElems = $(example);
+        // $container.append($newElems);
+        // $container.masonry('appended', $newElems,true);
     });
 });
