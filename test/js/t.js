@@ -16,7 +16,7 @@ var ajax=function(){
     $.ajax({
         type:"GET",
         async:"false",
-        url:"../test/js/data.json",
+        url:"../test/statics/data.json",
         dataType:"jsonp",
         jsonp:"jsonpCallback",//服务端用于接收callback调用的function名的参数
         success:function(data){
@@ -29,6 +29,9 @@ var ajax=function(){
     })
 }
 
+function create(data){
+    console.log(data);
+};
 
     
 // 实现卡片瀑布流式布局 自适应屏幕 自动排列
