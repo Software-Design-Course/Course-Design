@@ -11,14 +11,22 @@
 // '</div>\n' +
 // '</a>';
 
-
+// 跨域访问的问题
 var ajax=function(){
-    $.getJSON("",function(data){
-        $.each(data,function(i,item){
-            alert(item[0].name);
-        });
-
-    });
+    $.ajax({
+        type:"GET",
+        async:"false",
+        url:"../test/js/data.json",
+        dataType:"jsonp",
+        jsonp:"jsonpCallback",//服务端用于接收callback调用的function名的参数
+        success:function(data){
+            alert("data");
+        },
+        erro:function(){
+            alert("error");
+        }
+     
+    })
 }
 
 
