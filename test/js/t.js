@@ -11,18 +11,24 @@
 // '</div>\n' +
 // '</a>';
 
-
+// 跨域访问的问题
 var ajax=function(){
-    $.getJSON("",function(data){
-        $.each(data,function(i,item){
-            alert(item[0].name);
-        });
-
-    });
+    $.ajax({
+        type:"GET",
+        async:"false",
+        url:"../test/statics/data.json",
+        dataType:"jsonp",
+        jsonp:"jsonpCallback",//服务端用于接收callback调用的function名的参数
+        success:function(data){
+            alert("data");
+        },
+        erro:function(){
+            alert("error");
+        }
+     
+    })
 }
 
-
-    
 // 实现卡片瀑布流式布局 自适应屏幕 自动排列
 $(function () {
     var $container = $('#masonry');
