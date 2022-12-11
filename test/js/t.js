@@ -29,11 +29,6 @@ var ajax=function(){
     })
 }
 
-function create(data){
-    console.log(data);
-};
-
-    
 // 实现卡片瀑布流式布局 自适应屏幕 自动排列
 $(function () {
     var $container = $('#masonry');
