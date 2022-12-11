@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登陆注册</title>
-    <!-- 引入css 和图标图的css  引入才可以生效 -->
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
 </head>
+
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <!-- 注册 -->
-            <form action="#">
+            <form action="" name="form2">
                 <h1>用户注册</h1>
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
-                <input type="email" placeholder="邮箱">
-                <button id="send_code">发送验证码</button>
-                <input type="email" placeholder="验证码">
-                <button>注册</button>
+                <input type="text" placeholder="用户名" id="crname">
+                <input type="password" placeholder="密码" id="crpsw">
+                <button id="btn11">注册</button>
             </form>
         </div>
         <div class="form-container sing-in-container">
             <!-- 登陆 -->
-            <form action="#">
+            <form  action="" name="form1">
                 <h1>用户登陆</h1>
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
+                <input type="text" placeholder="用户名" id="loname">
+                <input type="password" placeholder="密码" id="lopsw">
                 <a href="#">忘记密码?</a>
-                <button>登陆</button>
+                <button id='btn01'>登陆</button>
             </form>
         </div>
         <!-- 侧边栏内容 -->
@@ -38,7 +35,7 @@
             <div class="overlay">
                 <div class="overlay-pannel overlay-left">
                     <h1>已有账号?</h1>
-                    <p>亲爱的快快点我去进行登陆吧。</p>
+                    <p>点我去进行登陆。</p>
                     <button class="ghost" id="signIn">登陆</button>
                 </div>
                 <div class="overlay-pannel overlay-right">
@@ -51,4 +48,5 @@
     </div>
 </body>
 <script src="./js/login.js"></script>
+
 </html>
