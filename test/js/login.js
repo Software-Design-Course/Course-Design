@@ -16,22 +16,22 @@ loginButton.addEventListener('click', function () {
     if (loname.value != "" && lopsw.value != "") {
         if (localStorage.getItem(loname.value) == null) {
             //可以注册
-            alert("6，查无此人");
+            alert("对不起，查无此人！");
         }
         else {
             if (lopsw.value == localStorage.getItem(loname.value)) {
-                alert("OK,登陆成功");
+                alert("登陆成功！");
                 //把表单的action改为2.jsp
                 document.form1.action = "./index.html";
                 document.form1.submit();
             }
             else {
-                alert("寄,密码错误");
+                alert("密码错误！");
             }
         }
     }
     else {
-        alert("6，用户名或密码为空");
+        alert("用户名或密码为空！");
     }
     //登陆部分
 })
@@ -43,14 +43,14 @@ registerButton.addEventListener('click', function () {
             // 注册成功
             localStorage.setItem(crname.value, crpsw.value);
             console.log(localStorage.getItem(crname.value));
-            alert("OK，注册成功");
+            alert("注册成功！");
             document.form2.action = "./index.html";
             document.form2.submit();
         }
         else
-            alert("乐，已经被注册");
+            alert("该用户名已经被注册！");
     }
     else {
-        alert("6，用户名或密码为空");
+        alert("用户名或密码为空！");
     }
 })
