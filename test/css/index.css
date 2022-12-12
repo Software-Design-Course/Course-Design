@@ -576,11 +576,21 @@ h2 {
 .interact-bar-right .reply-icon {
     background-image: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-reply.png);
 }
-.text-title {
+.text-title1{
     font-size: 36px;
     line-height: 50px;
     padding-top: 35px;
     padding-bottom: 24px;
+    font-weight: 600;
+    font-family: Microsoft Yahei,微软雅黑,宋体;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.text-title {
+    font-size: 26px;
+    line-height: 50px;
+    padding-top: 35px;
+    padding-bottom: 18px;
     font-weight: 600;
     font-family: Microsoft Yahei,微软雅黑,宋体;
     -webkit-font-smoothing: antialiased;
