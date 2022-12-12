@@ -600,7 +600,7 @@ h2 {
 .text-text{
     padding-top: 26px;
     padding-bottom: 16px;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 5px solid #f2f2f2;
 }
 .text1{
     padding-left:200px;
@@ -617,4 +617,28 @@ h2 {
 .xcp-publish{
     padding-left:400px;
     
+}
+.personal-title {
+    height: 100px;
+    width:100%;
+    line-height: 100px;
+    padding-top:80px;
+    padding-bottom:80px;
+    /*border-bottom: 5px solid #f8f8f8;*/
+    font: 20px/1.5 "微软雅黑","Hiragino Sans GB","Helvetica Neue",Helvetica,STHeiTi,"Microsoft Yahei",sans-serif;
+    color: #333;
+    
+}
+.personal{
+   width:100%;
+   height:100px;
+   padding-top:10px;
+}
+.personal_text{
+  width:100%;
+  line-height:80px;
+  padding-left:400px;
+}
+.personal1{
+    background-color: whitesmoke;
 }
