@@ -37,12 +37,11 @@ $(function () {
             itemSelector: '.item'
         });
     });
+
     // 点击查看更多按钮 或者往下刷新时
     $("#add_btn").click(function () {
-        ajax();
-
-        // $newElems = $(example);
-        // $container.append($newElems);
-        // $container.masonry('appended', $newElems,true);
+        $newElems = $(example);
+        $container.append($newElems);
+        $container.masonry('appended', $newElems,true);
     });
 });
