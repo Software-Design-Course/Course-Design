@@ -125,3 +125,13 @@ body {
 .current {
     background-color: #fff;
 }
+
+.bottomword{
+    text-decoration: none;
+    font-size: 14px;
+    color:black;
+}
+.bottomword:hover{
+color:blue;
+text-decoration:none;
+}
