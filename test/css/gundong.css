@@ -28,7 +28,8 @@ a {
 }
 
 a:hover {
-    color: #e33333;
+    color: white;
+    text-decoration: none;
 }
 
 button,
@@ -98,6 +99,7 @@ body {
     font-size: 18px;
     z-index: 2;
 }
+
 
 .arrow-r {
     right: 0;
