@@ -20,6 +20,40 @@
     <!-- 导入外部css文件 -->
     <style>
         @import url(./css/index.css);
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: url(./imag/1.jpg) no-repeat center top;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .baidu {
+            overflow: hidden;
+            margin: 100px auto;
+            background-color: rgba(250,250,250,0.1);
+            /*width: 410px;*/
+            width:400px;
+            /*padding-top: 3px;*/
+        }
+        
+        .baidu li {
+            float: left;
+            /*margin: 0 1px;*/
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        
+        .baidu img {
+            width: 100px;
+        }
+    
     </style>
 </head>
 <body>
@@ -73,7 +107,7 @@
             </nav>
             <div class="personal-title">
                 <img src="./imag/tongxunlu.png">
-                <span>我的信息</span>
+                <span style="color:#fff">我的信息</span>
             </div>
             <div class="personal1">
             <div class="personal">
@@ -97,6 +131,12 @@
                         </div>
                 
             </div>
+            <ul class="baidu">
+                <li><img src="./imag/1.jpg"></li>
+                <li><img src="./imag/2.jpg"></li>
+                <li><img src="./imag/3.jpg"></li>
+                <li><img src="./imag/4.jpg"></li>
+            </ul>
             </div>
             <!--<div class="index_more">-->
                 <!-- 点击按钮产生更多的卡片 (作废)-->
@@ -104,17 +144,17 @@
                 <!-- data-toggle="modal" data-target="#myModal" -->
             <!--</div>-->
             <div class="row1" style="width:100%">
-                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center" style="color:#fff">
                     <p style="margin-top: 8px;">联系我们</p>
                     <p> 犀浦校区地址:中国四川省成都市郫都区犀安路 999 号西南交通大学</p>
                     <p> 邮政编码:611756 </p>
                     <p style="margin-bottom: 8px;"> 电话:+11 4514 </p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center hidden-md hidden-sm">
-                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/" class="bottomword">西南交通大学</a></p>
-                    <p><a href="http://jwc.swjtu.edu.cn/" class="bottomword">西南交通大学教务处</a></p>
-                    <p><a href="https://sist.swjtu.edu.cn/" class="bottomword">西南交通大学信息科学与技术学院</a></p>
-                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/" class="bottomword">西南交通大学茅以升学院</a></p>
+                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/" class="bottomword" style="color:#fff">西南交通大学</a></p>
+                    <p><a href="http://jwc.swjtu.edu.cn/" class="bottomword" style="color:#fff">西南交通大学教务处</a></p>
+                    <p><a href="https://sist.swjtu.edu.cn/" class="bottomword" style="color:#fff">西南交通大学信息科学与技术学院</a></p>
+                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/" class="bottomword" style="color:#fff">西南交通大学茅以升学院</a></p>
                 </div>
             </div>
         </div>
@@ -124,5 +164,5 @@
 
 <script src="../js/jquery-3.6.1.js"></script>
 <script src="../js/bootstrap.js"></script>
-
+<script src="./js/picture.js"></script>
 </html>

@@ -633,6 +633,7 @@ h2 {
    width:100%;
    height:100px;
    padding-top:10px;
+   
 }
 .personal_text{
   width:100%;
@@ -640,9 +641,15 @@ h2 {
   padding-left:400px;
 }
 .personal1{
-    background-color: whitesmoke;
+    background-color: rgba(250,250,250,0.4);
 }
 .xcp-list{
     border-bottom: 1px solid #f2f2f2;
 }
-
+.baidu {
+    overflow: hidden;
+    margin: 100px auto;
+    background-color: #fff;
+    width: 410px;
+    padding-top: 3px;
+}
