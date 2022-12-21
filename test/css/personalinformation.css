@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.baidu {
+    overflow: hidden;
+    margin: 100px auto;
+    background-color: rgba(250,250,250,0.1);
+    /*width: 410px;*/
+    width:400px;
+    /*padding-top: 3px;*/
+}
+
+.baidu li {
+    float: left;
+    /*margin: 0 1px;*/
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.baidu img {
+    width: 100px;
+}
