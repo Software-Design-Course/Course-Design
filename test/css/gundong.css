@@ -32,9 +32,10 @@ a:hover {
     text-decoration: none;
 }
 
+
 button,
 input {
-    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    /*font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;*/
     /*取消轮廓线 蓝色的*/
     outline: none;
 }
@@ -65,7 +66,7 @@ body {
     position: relative;
     width: 721px;
     height: 455px;
-    background-color: purple;
+    background-color: white;
     overflow: hidden;
     margin-top: 50px;
     margin-left: 400px;
@@ -99,7 +100,14 @@ body {
     font-size: 18px;
     z-index: 2;
 }
-
+.arrow-l :left{
+    color:white;
+    text-decoration: none;
+}
+.arrow-r :left{
+    color:white;
+    text-decoration: none;
+}
 
 .arrow-r {
     right: 0;
@@ -149,10 +157,11 @@ summary {
     cursor: pointer;
     position: relative;
     text-align: center;
-    /*background: url(./imag/1.jpg) no-repeat center top;*/
+   
 }
 details {
-    margin-top:10px;
+   padding-top:10px;
+    background: url(./imag./background1.png);
 }
 details[open] summary~* {
     animation: sweep .5s ease-in-out;
@@ -186,10 +195,7 @@ details[open]>summary::after {
 details>summary::-webkit-details-marker {
     display: none;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 img {
     display: block;
@@ -200,11 +206,16 @@ ul {
 }
 
 .king {
-    width: 852px;
-    margin: 40px auto;
+    width: 582px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     background: url(images/bg.png) no-repeat;
     overflow: hidden;
-    padding: 10px;
+    margin-left: 500px;
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    padding-top:20px;
+    padding-left:20px;
 }
 
 .king ul {
