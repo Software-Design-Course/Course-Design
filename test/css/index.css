@@ -260,6 +260,7 @@ a.item{
 }
 .bottomword{
     text-decoration: none;
+    font-size:15px;
 }
 .bottomword:hover{
 color:blue;
@@ -612,6 +613,7 @@ h2 {
     padding-left:400px;
     
 }
+
 .personal-title {
     height: 100px;
     width:100%;
@@ -639,8 +641,9 @@ h2 {
     background-color: rgba(250,250,250,0.4);
 }
 .xcp-list{
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 5px solid #f2f2f2;
 }
+
 .baidu {
     overflow: hidden;
     margin: 100px auto;
