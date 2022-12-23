@@ -1,4 +1,4 @@
-var example1 = ' <a href="#" target="_blank" class="item">\n' +
+var example1 = ' <a href="#" target="_self" class="item">\n' +
     '<div class="text_geng">\n' +
     '<h4>天选牧羊人</h4>\n' +
     '<h5>简介:</h5>\n' +
@@ -6,7 +6,7 @@ var example1 = ' <a href="#" target="_blank" class="item">\n' +
     '</div>\n' +
     '</a>';
 
-var example2 = ' <a href="#" target="_blank" class="item">\n' +
+var example2 = ' <a href="#" target="_self" class="item">\n' +
     '<div class="text_geng">\n' +
     '<h4>卡塔尔版退钱哥</h4>\n' +
     '<h5>简介:</h5>\n' +
@@ -14,7 +14,7 @@ var example2 = ' <a href="#" target="_blank" class="item">\n' +
     '</div>\n' +
     '</a>';
 
-var example3 = ' <a href="#" target="_blank" class="item">\n' +
+var example3 = ' <a href="#" target="_self" class="item">\n' +
 '<div class="text_geng">\n' +
 '<h4>输麻了</h4>\n' +
 '<h5>简介:</h5>\n' +
@@ -22,7 +22,7 @@ var example3 = ' <a href="#" target="_blank" class="item">\n' +
 '</div>\n' +
 '</a>';
 
-var example4 = ' <a href="#" target="_blank" class="item">\n' +
+var example4 = ' <a href="#" target="_self" class="item">\n' +
 '<div class="text_geng">\n' +
 '<h4>身在辐中不知辐</h4>\n' +
 '<h5>简介:</h5>\n' +
