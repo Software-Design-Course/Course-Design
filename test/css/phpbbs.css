@@ -227,3 +227,27 @@ div.index_mid{
 .tei>.hang>div:last-of-type>span{
   margin:10px;
 }
+
+div.index_mid{
+	
+		float: left;
+		color: black;
+		width:70%;
+		/* min-width:1200px; */
+		background-color:whitesmoke;
+		/* position:absolute;
+		margin:auto;
+		top: 80px;
+		left: 0;
+		right: 0;
+		bottom: 0; */
+		
+		margin-top:65px;
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between; 
+	
+		/* overflow: scroll; */
+	
+}
