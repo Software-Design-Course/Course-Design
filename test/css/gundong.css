@@ -148,6 +148,8 @@ summary {
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    text-align: center;
+    /*background: url(./imag/1.jpg) no-repeat center top;*/
 }
 details {
     margin-top:10px;
