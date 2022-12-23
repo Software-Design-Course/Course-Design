@@ -137,3 +137,50 @@ body {
 color:blue;
 text-decoration:none;
 }
+summary {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f3f3f3;
+    color: #000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+}
+details {
+    margin-top:10px;
+}
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px
+        
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
+}
+
+details>summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+
+details[open]>summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
