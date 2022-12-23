@@ -56,13 +56,7 @@ div.index_text{
     /* margin-left: 10px; */
     text-align: center;
 }
-.text_geng{
-    float: left;
-    width: 100%;
-    color:black;
-    background-color:white;
-    border-radius: 10px 10px 10px 10px;
-}
+
 p.text_wenzi{
     text-align:left;
     text-indent:2em;
@@ -653,4 +647,20 @@ h2 {
     background-color: #fff;
     width: 410px;
     padding-top: 3px;
+}
+
+div.text_geng{
+    float: left;
+    width: 100%;
+    color:black;
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+div.text_geng img{
+    transition: 0.5s all ease-in-out;
+}
+div.text_geng:hover img{
+    transform: scale(1.08); 
 }
