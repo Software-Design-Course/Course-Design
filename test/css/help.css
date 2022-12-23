@@ -1,20 +1,32 @@
 #fp-nav ul li a.active span,
-        #fp-nav ul li a span {
+#fp-nav ul li a span {
             background-color: red!important;
-        }
+}
         
-        .section1 {
-            background: url(./imag./background1.jpg) 50%;
-        }
+.section1 {
+    background: url(http://idowebok.u.qiniudn.com/77/1.jpg) 50%;
+    width:500px;
+    height:400px;
+ }
         
-        .section2 {
-            background: url(http://idowebok.u.qiniudn.com/77/2.jpg) 50%;
-        }
+.section2 {
+    background: url(http://idowebok.u.qiniudn.com/77/2.jpg) 50%;
+}
         
-        .section3 {
-            background: url(http://idowebok.u.qiniudn.com/77/3.jpg) 50%;
-        }
+.section3 {
+    background: url(http://idowebok.u.qiniudn.com/77/3.jpg) 50%;
+}
         
-        .section4 {
-            background: url(http://idowebok.u.qiniudn.com/77/4.jpg) 50%;
-        }
+.section4 {
+    background: url(http://idowebok.u.qiniudn.com/77/4.jpg) 50%;
+}
+.text{
+    color:black;
+    text-decoration: none;
+    padding-top: 0px;
+    text-align: center;
+}
+.text :hover{
+    color:black;
+    text-decoration: underline;
+}
