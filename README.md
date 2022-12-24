@@ -19,13 +19,13 @@ git clone git@github.com:Software-Design-Course/Course-Design.git
 由于云服务器的高昂费用问题，我们不能保证域名访问的长期有效。但是至少在**2023年1月10日**前，它是有效的。
 
 ## 4 部分界面
-![网站首页](./images/home.png)
+![网站首页](http://hotwordsdictionary.top/images/home.png)
 <br>
 <br>
-![论坛首页](./images/forum.png)
+![论坛首页](http://hotwordsdictionary.top/images/forum.png)
 <br>
 <br>
-![帮助界面](./images/help.png)
+![帮助界面](http://hotwordsdictionary.top/images/help.png)
 ## 5 项目进度
 ### 2022-12-25
 -   录视频
