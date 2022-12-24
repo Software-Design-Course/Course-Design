@@ -1,3 +1,4 @@
+// 鼠标状态
 $(function() {
     //鼠标进入的时候,其他的li标签透明度：0.5
     $(".wrap li").hover(function() {

@@ -44,9 +44,6 @@ searchButton.addEventListener('click', function () {
         }
     }
     if (k == 1) {
-        // alert("找到了");
-        // alert(object[i].target);
-
         document.form2.action = "./reserchrestlt.html";
     }
     else {

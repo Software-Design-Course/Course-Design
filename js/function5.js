@@ -1,3 +1,4 @@
+// 鼠标状态
 $(function() {
     // 鼠标经过某个小li 有两步操作：
     $(".king li").mouseenter(function() {

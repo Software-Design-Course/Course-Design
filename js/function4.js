@@ -1,3 +1,4 @@
+// 定时器
 function animate(obj, target, callback) {
     // console.log(callback);  callback = function() {}  调用的时候 callback()
 
