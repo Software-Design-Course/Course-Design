@@ -10,3 +10,14 @@
          document.body.style.backgroundImage = 'url(' + this.src + ')';
      }
  }
+
+function init() {
+    var username = localStorage.getItem("usingname");
+    var item = JSON.parse(window.localStorage.getItem(username));
+    // document.querySelector('#loname').value=username;
+    document.getElementById("loage").innerHTML=item.age;
+    document.getElementById("lonc").innerHTML=item.Nicheng;
+    document.getElementById("logender").innerHTML=item.Gender;
+    document.getElementById("loemail").innerHTML=item.emailID;
+    document.getElementById("loname").innerHTML=username;
+}
