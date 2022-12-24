@@ -44,7 +44,7 @@ searchButton.addEventListener('click', function () {
         }
     }
     if (k == 1) {
-        document.form2.action = "./reserchrestlt.html";
+        document.form2.action = "./searchresult.html";
     }
     else {
         alert("对不起，找不到你搜索的梗");
