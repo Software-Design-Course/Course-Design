@@ -1,4 +1,7 @@
- // 1. 获取元素 
+// 搜索功能
+
+
+// 1. 获取元素 
  var imgs = document.querySelector('.baidu').querySelectorAll('img');
  // console.log(imgs);
  // 2. 循环注册事件 

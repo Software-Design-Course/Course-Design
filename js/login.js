@@ -27,7 +27,7 @@ loginButton.addEventListener('click', function () {
                 alert("登陆成功！");
                 //把表单的action改为2.jsp
                 localStorage.setItem("usingname",loname.value)
-                document.form1.action = "./index.html";
+                document.form1.action = "./html/home.html";
                 document.form1.submit();
             }
             else {
@@ -56,7 +56,7 @@ registerButton.addEventListener('click', function () {
             console.log(localStorage.getItem(crname.value));
             alert("注册成功！");
             localStorage.setItem("usingname",crname.value)
-            document.form2.action = "./index.html";
+            document.form2.action = "./html/home.html";
             document.form2.submit();
         }
         else
