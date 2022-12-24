@@ -56,13 +56,7 @@ div.index_text{
     /* margin-left: 10px; */
     text-align: center;
 }
-.text_geng{
-    float: left;
-    width: 100%;
-    color:black;
-    background-color:white;
-    border-radius: 10px 10px 10px 10px;
-}
+
 p.text_wenzi{
     text-align:left;
     text-indent:2em;
@@ -263,4 +257,413 @@ a.item{
     bottom: 20px;
     right: 20px;
     display:none;
+}
+.bottomword{
+    text-decoration: none;
+    font-size:15px;
+}
+.bottomword:hover{
+color:blue;
+text-decoration:none;
+}
+.first{
+    font:12px arial;
+    overflow-y: scroll;
+    color:black;
+    padding-top: 50px;
+}
+.xcp-publish{
+    padding-bottom:20px;
+}
+.xcp-publish-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+}
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.xcp-publish-main {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.xcp-publish-main .right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.x-interact-publish {
+    width: 100%;
+    font-size: 13px;
+    color: #222;
+}
+.xcp-publish-main .left {
+    padding-top: 13px;
+    width: 64px;
+}
+.x-avatar {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+.x-avatar-placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-bd-logo.png) 50% 50% no-repeat;
+    background-size: 50% 50%;
+}
+.x-avatar-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.xcp-publish-main .right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.x-interact-publish {
+    width: 50%;
+    font-size: 13px;
+    color: #222;
+}
+.x-interact-publish-cont, .x-interact-publish-cont-topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background: #f5f5f6;
+    border-radius: 12px;
+}
+.x-interact-publish .text-area {
+    padding: 16px 16px 23px;
+    width: 100%;
+    resize: none;
+    background: #f5f5f6;
+    border-radius: 12px;
+    border: none;
+    color: #1f1f1f;
+}
+.x-interact-publish-panel-center {
+    padding-top: 4px;
+}
+.x-interact-publish-opt {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.x-interact-publish .emoj {
+    background-image: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xib-emoj-btn2.png);
+}
+.x-interact-publish .no-radio .radio {
+    display: none;
+}
+.x-interact-publish .radio:not(:first-child) {
+    margin-left: 30px;
+}
+.x-interact-publish .radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.x-interact-publish .extra {
+    position: absolute;
+    right: 90px;
+    color: #858585;
+    
+}
+.x-interact-publish .send {
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #4e6ef2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.x-interact-publish .emoj-panel {
+    background: #fff;
+}
+.xcp-list-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+}
+.xcp-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 28px;
+    font-size: 14px;
+    color: #222;
+}
+.xcp-item .left {
+    width: 64px;
+}
+.x-avatar {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+
+.x-avatar-placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-bd-logo.png) 50% 50% no-repeat;
+    background-size: 50% 50%;
+}
+.x-avatar-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.xcp-item .right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 1%;
+}
+.user-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    position: relative;
+}
+.user-bar-uname {
+    font-family: PingFangSC-Semibold;
+    font-size: 13px;
+    color: #222;
+}
+.x-interact-rich-text {
+    padding-top: 10px;
+    font: 14px/22px PingFangSC-Regular;
+    color: #222;
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+.interact-bar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 8px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #9195a3;
+}
+.interact-bar-left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.interact-bar-left .area {
+    margin-left: 8px;
+}
+.interact-bar-left .delete, .interact-bar-left .report {
+    display: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.interact-bar-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    color: #222;
+}
+.interact-bar-right .reply {
+    cursor: pointer;
+}
+.interact-bar-right .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 500px;
+}
+.interact-bar-right .like {
+    cursor: pointer;
+    margin-right: 500px;
+}
+.interact-bar-right .like-icon {
+    background-image: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-like.png);
+}
+.interact-bar-right .icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.is-second .xcp-item {
+    padding-top: 28px;
+}
+.interact-bar-right .like, .interact-bar-right .reply {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.interact-bar-right .reply-icon {
+    background-image: url(https://b.bdstatic.com/searchbox/icms/searchbox/img/xcp-reply.png);
+}
+.text-title1{
+    font-size: 36px;
+    line-height: 50px;
+    padding-top: 35px;
+    padding-bottom: 24px;
+    font-weight: 600;
+    font-family: Microsoft Yahei,微软雅黑,宋体;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.text-title {
+    font-size: 26px;
+    line-height: 50px;
+    padding-top: 35px;
+    padding-bottom: 18px;
+    font-weight: 600;
+    font-family: Microsoft Yahei,微软雅黑,宋体;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.text-text{
+    padding-top: 26px;
+    padding-bottom: 16px;
+    border-bottom: 5px solid #f2f2f2;
+}
+.text1{
+    padding-left:200px;
+    padding-right:200px;
+
+}
+.text-text-text{
+    font-size: 18px;
+    color: #222;
+    line-height: 30px;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.xcp-publish{
+    padding-left:400px;
+    
+}
+
+.personal-title {
+    height: 100px;
+    width:100%;
+    line-height: 100px;
+    padding-top:80px;
+    padding-bottom:80px;
+    margin-left: 20px;
+    /*border-bottom: 5px solid #f8f8f8;*/
+    font: 20px/1.5 "微软雅黑","Hiragino Sans GB","Helvetica Neue",Helvetica,STHeiTi,"Microsoft Yahei",sans-serif;
+    color: #333;
+    
+}
+.personal{
+   width:100%;
+   height:100px;
+   padding-top:10px;
+   
+}
+.personal_text{
+  width:100%;
+  line-height:80px;
+  padding-left:400px;
+}
+.personal1{
+    background-color: rgba(250,250,250,0.4);
+}
+.xcp-list{
+    border-bottom: 5px solid #f2f2f2;
+}
+
+.baidu {
+    overflow: hidden;
+    margin: 100px auto;
+    background-color: #fff;
+    width: 410px;
+    padding-top: 3px;
+}
+
+div.text_geng{
+    float: left;
+    width: 100%;
+    color:black;
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+div.text_geng img{
+    transition: 0.5s all ease-in-out;
+}
+div.text_geng:hover img{
+    transform: scale(1.08); 
 }

@@ -7,16 +7,14 @@
     <title>网络热梗词典</title>
     <!-- 相对地址 -->
     <base href="">
-    <!-- 在新建界面中打开 -->
-    <!-- <base target="_blank"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="weidongting">
     <!-- 网站页签 小图标 -->
-    <link rel="shortcut icon" href="./images/icons/website_icon.png">
+    <link rel="shortcut icon" href="../images/icons/website_icon.png">
     <!-- 使用bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- 导入外部css文件 -->
     <style>
         @import url(./css/index.css);
@@ -42,15 +40,14 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="" target="_self">首页 <span class="sr-only">(current)</span></a>
-                            </li>
+                            <li class="active"><a href="" target="_self">首页<span class="sr-only">(current)</span></a></li>
                             <li><a href="./forum.html">论坛</a></li>
-                            <li><a href="#">分类</a></li>
+                            <li><a href="./gundong.html">分类</a></li>
                         </ul>
-                        <form class="navbar-form navbar-left">
+                        <form class="navbar-form navbar-left" name="form2">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="示例：xx梗">
-                                <button type="submit" class="btn btn-default" onclick=""><span
+                                <input type="text" class="form-control" placeholder="示例：xx梗" id="search">
+                                <button type="submit" class="btn btn-default" id="btn01"><span
                                         class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索</button>
                             </div>
                         </form>
@@ -60,31 +57,33 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">我的信息</a></li>
+                                    <li><a href="./personalinformation.html">我的信息</a></li>
                                     <!-- 创建一条线 -->
                                     <!-- <li role="separator" class="divider"></li> -->
                                     <li><a href="#">修改资料</a></li>
+                                    <li><a href="./login.html">登录/注册</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">设置</a></li>
+                            <li><a href="./help.html">帮助</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
+            <!-- 网站主体 -->
             <div class="index_main">
                 <div class="row" style="width: 100%;">
                     <div class="col-lg-2 col-md-2 col-sm-2"></div>
                     <div class="col-lg-10 col-md-10 col-sm-10 index_mid">
                         <div class="container  text-center" id="masonry">
-                            <a href="#" target="_blank" class="item">
+                            <a href="./detailedinformation.html" target="_self" class="item">
                                 <div class="text_geng">
                                     <h4>芭比Q了</h4>
                                     <h5>简介:</h5>
                                     <p class="text_wenzi">芭比q,谐音barbecue,原意为烧烤,在网络用语中“芭比q了”意为“完蛋了”(被烧烤=被火化=完蛋了)。</p>
-                                    <img src="./images/bbq.jpg" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/bbq.jpg" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="./detailedinformation1.html" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>别急</h4>
@@ -98,10 +97,10 @@
                                     <p class="text_wenzi">
                                         追根溯源,别急梗出自b站up主djgun的经典发言。d老师专门做电棍的鬼畜音频,直播时候喜欢放鬼图和阴间bgm来整人,因此直播间经常被封,然后djgun就会发动态表示"别急"。
                                         之后别急的梗就被动物园粉丝带火了，扩散到v圈。</p>
-                                    <img src="./images/bieji.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/bieji.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="./detailedinformation2.html" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>半透膜大学</h4>
@@ -112,7 +111,7 @@
                                     <p class="text_wenzi">具体指疫情期间，个别高校选择性通过的防疫政策，即只限制学生外出，不限制高校老师，家属，甚至校外人员进入的现象。</p>
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="./detailedinformation3.html" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>为爱冲锋的勇士</h4>
@@ -126,7 +125,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>一眼丁真</h4>
@@ -139,10 +138,10 @@
                                     </p>
                                     <p class="text_wenzi">一般网友会评论“一眼真”来讽刺p图的人，后逐渐演变为“一眼丁真，鉴定为假”，
                                         并以此为契机开始了大规模对丁真的p图用以嘲讽他人</p>
-                                    <img src="./images/dz.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/dz.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>差不多得了</h4>
@@ -152,10 +151,10 @@
                                     </p>
                                     <p class="text_wenzi">这句话最初是16年抽象tv盛传磊哥的视频，“你们这帮炒作狗啊差不多就得了吧”，后来在神吧（神奈川冲浪里吧）流行，
                                         神吧被封后大量用户转移至孙吧（孙笑川吧）。使用此口头禅。通常用来讽刺玩烂梗的人。</p>
-                                    <img src="./images/cbddl.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/cbddl.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>安塞腰鼓</h4>
@@ -168,7 +167,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>臣犯了十宗罪</h4>
@@ -181,7 +180,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>到达世界最高城理塘</h4>
@@ -193,10 +192,10 @@
                                         还是看看远处的雪山吧家人们; 丽丽在抖音上的形象是诙谐幽默的，而他在达到理塘说丁真这个视频，本意上并没有想着搞笑，只是调侃一下;
                                         由于丽丽和丁真都有一定的流量，让二人的梦幻联动从此刻开始了，网友们在拍摄风景视频的时候纷纷开启了模仿;让这句话成为在抖音上非常热门的一个梗。
                                     </p>
-                                    <img src="./images/ddsjzgc.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/ddsjzgc.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>老六</h4>
@@ -208,10 +207,10 @@
                                         最开始“老六”一词指的是游戏中的自由人（老阴b），即水平高超，蹲人思路清奇，就像葫芦娃里的会隐身的六娃，如隐形人一般给人一种出其不意的感觉。
                                         但后来在游戏中那些游离于队伍之外，打的很菜，不懂得跟队友配合的人，也被称之为“老六”。也有不少人用“老六”来形容一些让人感到无语的人和事。
                                     </p>
-                                    <img src="./images/nzgll.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/nzgll.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>只有说声抱歉</h4>
@@ -221,10 +220,10 @@
                                     </p>
                                     <p class="text_wenzi">最开始出自数电实验龙老师在QQ群里发言的截图，后一直被转载。现在已经成为了数电学子的经典表情包，常用来回复无法做成的事情
                                     </p>
-                                    <img src="./images/sorry.jpg" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/sorry.jpg" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>羊了个羊</h4>
@@ -236,10 +235,10 @@
                                         这个梗出自于近期火爆全网的高智商挑战游戏《羊了个羊》，无数玩家为之疯狂，彻夜不眠只为通关；第一关可以随便点点，大家都觉得很简单，
                                         第二关虽然看起来也很简单，但是挑战过程中给我们来了个下马威；羊了个羊本身是作为一款小程序游戏，但是因为这种从第一关到第二关毫无缓和的难度提升空间令人叫苦不迭；
                                         第一关和第二关，是从天上到地下的落差感，从幼升小到上清华，一度让网友们精神失常。</p>
-                                    <img src="./images/ylgy.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/ylgy.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>鸡你太美</h4>
@@ -251,10 +250,10 @@
                                         他在选秀节目偶像练习生上二次表演这首歌曲，却因为太过喜感而出圈；随着蔡徐坤的大火，黑粉也越来越多，最近蔡徐坤成为NBA篮球形象大使，
                                         有人把蔡徐坤两年前的一段篮球视频翻出来，而“鸡你太美”是这段舞蹈的BGM“只因你太美”的谐音。
                                         BGM中歌词“只因你太美”听起来有点像“鸡你太美”所以就被网友调侃成鸡你太美。</p>
-                                    <img src="./images/jntm.png" class="img-responsive" alt="Responsive image">
+                                    <img src="./imag/jntm.png" class="img-responsive" alt="Responsive image">
                                 </div>
                             </a>
-                            <a href="#" target="_blank" class="item">
+                            <a href="#" target="_self" class="item">
                                 <div class="text_geng">
                                     <p>
                                     <h4>你最好是</h4>
@@ -266,20 +265,18 @@
                                         你最好是，坤梗中的梗，原来是当ikun遇到疑似小黑子假扮的ikun说的，现在被用来调侃真ikun，还衍生出了谐音，梨最好食，你最豪士</p>
                                 </div>
                             </a>
-
-
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2"></div>
                 </div>
-
-
             </div>
+            <!-- 点击产生更多 -->
             <div class="index_more">
-                <!-- 点击按钮产生更多的卡片 (作废)-->
+                <!-- 点击按钮产生更多的卡片-->
                 <button id="add_btn" class="btn btn-primary btn-lg">点击产生更多</button>
                 <!-- data-toggle="modal" data-target="#myModal" -->
             </div>
+            <!-- 网站尾部 -->
             <div class="row" style="width:100%">
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center">
                     <p style="margin-top: 8px;">联系我们</p>
@@ -288,10 +285,10 @@
                     <p style="margin-bottom: 8px;"> 电话:+11 4514 </p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center hidden-md hidden-sm">
-                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/">西南交通大学</a></p>
-                    <p><a href="http://jwc.swjtu.edu.cn/">西南交通大学教务处</a></p>
-                    <p><a href="https://sist.swjtu.edu.cn/">西南交通大学信息科学与技术学院</a></p>
-                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/">西南交通大学茅以升学院</a></p>
+                    <p style="margin-top: 8px;"><a href="https://www.swjtu.edu.cn/" class="bottomword">西南交通大学</a></p>
+                    <p><a href="http://jwc.swjtu.edu.cn/" class="bottomword">西南交通大学教务处</a></p>
+                    <p><a href="https://sist.swjtu.edu.cn/" class="bottomword">西南交通大学信息科学与技术学院</a></p>
+                    <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/" class="bottomword">西南交通大学茅以升学院</a></p>
                 </div>
             </div>
         </div>
@@ -303,14 +300,13 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel">梗提示</h4>
                 </div>
                 <div class="modal-body">
-                    你好
+                    暂时没有新的梗哦
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
                 </div>
             </div>
         </div>
@@ -320,16 +316,13 @@
         data-toggle="tooltip" data-placement="left">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-
-
-
 </body>
 <!-- 必须按此顺序引入js文件，否则会发生错误 -->
-<script src="./js/jquery-3.6.1.js"></script>
-<script src="./js/bootstrap.js"></script>
-<script src="./js/masonry.pkgd.js"></script>
-<script src="./js/masonry-docs.min.js"></script>
-<script type="text/javascript" src="./js/t.js"></script>
-<script src="./js/index.js"></script>
-
+<script src="../js/jquery-3.6.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/masonry.pkgd.js"></script>
+<script src="../js/masonry-docs.min.js"></script>
+<script src="./js/function1.js"></script>
+<script src="./js/function2.js"></script>
+<script src="./js/search.js"></script>
 </html>

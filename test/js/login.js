@@ -2,6 +2,10 @@ const loname = document.querySelector('#loname');
 const lopsw = document.querySelector('#lopsw');
 const crname = document.querySelector('#crname');
 const crpsw = document.querySelector('#crpsw');
+const crage = document.querySelector('#crage');
+const cremail = document.querySelector('#cremail');
+const crnc = document.querySelector('#crnc');
+const crgender = document.querySelector('#crgender');
 const container = document.querySelector('#container');
 const signInButton = document.querySelector('#signIn');
 const signUpButton = document.querySelector('#signUp');
@@ -19,9 +23,10 @@ loginButton.addEventListener('click', function () {
             alert("对不起，查无此人！");
         }
         else {
-            if (lopsw.value == localStorage.getItem(loname.value)) {
+            if (lopsw.value == JSON.parse(localStorage.getItem(loname.value)).PSW) {
                 alert("登陆成功！");
                 //把表单的action改为2.jsp
+                localStorage.setItem("usingname",loname.value)
                 document.form1.action = "./index.html";
                 document.form1.submit();
             }
@@ -37,13 +42,20 @@ loginButton.addEventListener('click', function () {
 })
 
 registerButton.addEventListener('click', function () {
-    if (crname.value != "" && crpsw.value != "") {
+    if (crname.value != "" && crpsw.value != "" && cremail.value != ""&& crnc.value != ""&& crgender.value != ""&& crage.value != "") {
         if (localStorage.getItem(crname.value) == null) {
-            //可以注册
-            // 注册成功
-            localStorage.setItem(crname.value, crpsw.value);
+            var data={
+                emailID:cremail.value,
+                PSW:crpsw.value,
+                Nicheng:crnc.value,
+                Gender:crgender.value,
+                age:crage.value
+            }
+            var dataToString=JSON.stringify(data)
+            localStorage.setItem(crname.value, dataToString);
             console.log(localStorage.getItem(crname.value));
             alert("注册成功！");
+            localStorage.setItem("usingname",crname.value)
             document.form2.action = "./index.html";
             document.form2.submit();
         }
@@ -51,6 +63,6 @@ registerButton.addEventListener('click', function () {
             alert("该用户名已经被注册！");
     }
     else {
-        alert("用户名或密码为空！");
+        alert("请填写完整！");
     }
 })
