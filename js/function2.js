@@ -70,3 +70,7 @@ $(function () {
         }
     });
 });
+
+$("#fatie_btn").click(function(){
+    $("#fatie").modal('show');
+});

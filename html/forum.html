@@ -67,7 +67,7 @@
                     <span>帖数:<a href="">90987</a></span>
                     </div>
                     
-                    <span>分享你喜欢的梗    <button class="btn btn-primary">发帖</button></span>
+                    <span>分享你喜欢的梗    <button class="btn btn-primary" id="fatie_btn">发帖</button></span>
                 </div>
         
                 <!--导航-->
@@ -350,11 +350,28 @@
                 <p style="margin-bottom: 8px;"><a href="https://mys.swjtu.edu.cn/" class="bottomword">西南交通大学茅以升学院</a></p>
             </div>
         </div>
+        <div class="modal fade" id="fatie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">编辑贴子内容</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea cols="70" rows="5"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">  发帖  </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</body>
     <script src="../js/jquery-3.6.1.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/masonry.pkgd.js"></script>
     <script src="../js/masonry-docs.min.js"></script>
-    <script src="../js/function1.js"></script>
     <script src="../js/function2.js"></script>
 </html>
