@@ -1,0 +1,4 @@
+Bootstrap==3.4.1
+Jquery==3.6.1
+fullPage==3.0.4
+Masonry==4.2.2
